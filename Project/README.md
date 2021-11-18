@@ -22,11 +22,11 @@ In order to integrate the factor generation and multi-factor synthesis steps in 
 
 **Data sample**  
 <div align='center'>
-    <img src='image/datasample1.png' width='600'/>
+    <img src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/datasample1.png' width='600'/>
 </div>
 
 <div align='center'>
-    <img src='image/datasample2.png' width='900'/>
+    <img src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/datasample2.png' width='900'/>
     </div>
  
 ### 2. Data processing
@@ -36,11 +36,11 @@ In order to integrate the factor generation and multi-factor synthesis steps in 
 * Feature Standardization：to avoid unit effect, we normalized the data along the feature direction
 
 <div align='center'>
-    <img src='image/heatmap.png' width='700'/>
+    <img src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/heatmap.png' width='700'/>
 </div>
 
 <div align='center'>
-    <img src='image/distribution.png' width='500'/>
+    <img src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/distribution.png' width='500'/>
     </div>
     
 ## Model
@@ -74,7 +74,7 @@ PyTorch is an open source machine learning library and is widely used in deep le
 
 **Confusion matrix**
 
-<div align='center'><img width='300'src='image/con_matrix_alphanet.png'/></div>
+<div align='center'><img width='300'src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/con_matrix_alphanet.png'/></div>
 
 ### 2. Other models: use the price-volume data after feature extraction as input
 
@@ -84,20 +84,20 @@ Convolutional Neural Network (CNN) is the most influential model in the field of
 In this project, we build a `CNN with one convolutional layer, one max pooling layer with kernal (3, 3) and two fully connected layer with neurons 32, 1`, respectively.
 
 **Network structure**  
-<div align='center'><img width='400' src='image/cnn_model.png'/></div>  
+<div align='center'><img width='400' src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/cnn_model.png'/></div>  
 
 **Confusion matrix**  
-<div align='center'><img width='300' src='image/con_matrix_cnn.png'/></div>
+<div align='center'><img width='300' src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/con_matrix_cnn.png'/></div>
 
 #### 2.2 LogisticRegression
 In order to reduce the time of computing, we use pca method to deduct dimensions. We observed that the 3 most import features can explain almost 90% of all the variance, so we used pca method and set components equal to 3.  
 To improve the performance of models, we use GridSearch to find the best C value from [0.01, 0.1, 1, 10, 100].
 
 **Confusion matrix**
-<div align='center'><img width='300' src='image/con_matrix_lr.png'/></div>
+<div align='center'><img width='300' src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/con_matrix_lr.png'/></div>
 
 #### 2.3 RandomForest
 To improve the performance of models, we use GridSearch to find the best max depth from [10, 20, 30, 40] and best max features from [5, 15, 25, 35, 45, 55].
 
 **Confusion matrix**
-<div align='center'><img width='300' src='image/con_matrix_randomforest.png'/></div>
+<div align='center'><img width='300' src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/con_matrix_randomforest.png'/></div>
