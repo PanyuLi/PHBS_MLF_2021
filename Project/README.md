@@ -11,7 +11,7 @@ Li Linxiong| 2001212357
 ## Project Introduction
 
 In the past 10 years, deep learning models based on neural networks have led the development of artificial intelligence. Different from traditional machine learning, deep learning models directly extract features from raw data and make predictions for targets in an `end-to-end` manner, thereby avoiding manual intervention and information loss in multi-step learning. However, when deep learning is applied to `multi-factor stock selection`, the effect of applying existing models may not meet expectations, and a suitable network structure needs to be tailored.    
-In order to integrate the factor generation and multi-factor synthesis steps in multi-factor stock selection, this project designs two types of network structure to `predict the rise or fall` of each stock over the next 10 days: the first is `AlphaNet` using `raw price-volume data` as input, the other is using `price-volume data after feature extraction`, including: CNN, LogisticRegression and Random Forest.
+In order to integrate the factor generation and multi-factor synthesis steps in multi-factor stock selection, this project designs two types of network structure to `predict the rise or fall` of each stock over the next 10 days inspired by Huatai Research report (see [here](https://github.com/PanyuLi/PHBS_MLF_2021/edit/main/Project/docs/Research report from Huatai.pdf)): the first is `AlphaNet` using `raw price-volume data` as input, the other is using `price-volume data after feature extraction`, including: CNN, LogisticRegression and Random Forest.
 
 ## Data Analysis
 
