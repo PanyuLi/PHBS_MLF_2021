@@ -48,7 +48,8 @@ To get a better understanding of the properties of different features, we plot t
 **Feature correlation**   
 <div align='center'>
     <img src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/heatmap.png' width='500'/>
-</div>  
+</div>    
+
 **Feature distribution**   
 <div align='center'>
     <img src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/distribution.png' width='500'/>
