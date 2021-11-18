@@ -26,7 +26,7 @@ In order to integrate the factor generation and multi-factor synthesis steps in 
 </div>
 
 <div align='center'>
-    <img src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/datasample2.png' width='900'/>
+    <img src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/datasample2.png' width='700'/>
     </div>
  
 ### 2. Data processing
@@ -36,7 +36,7 @@ In order to integrate the factor generation and multi-factor synthesis steps in 
 * Feature Standardization：to avoid unit effect, we normalized the data along the feature direction
 
 <div align='center'>
-    <img src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/heatmap.png' width='700'/>
+    <img src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/heatmap.png' width='500'/>
 </div>
 
 <div align='center'>
