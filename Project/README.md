@@ -11,7 +11,7 @@ Li Linxiong| 2001212357
 ## Project Introduction
 
 In the past 10 years, deep learning models based on neural networks have led the development of artificial intelligence. Different from traditional machine learning, deep learning models directly extract features from raw data and make predictions for targets in an `end-to-end` manner, thereby avoiding manual intervention and information loss in multi-step learning. However, when deep learning is applied to `multi-factor stock selection`, the effect of applying existing models may not meet expectations, and a suitable network structure needs to be tailored.    
-In order to integrate the factor generation and multi-factor synthesis steps in multi-factor stock selection, this project designs two types of network structure to `predict the rise or fall` of each stock over the next 10 days inspired by Huatai Research report (see [here](https://github.com/PanyuLi/PHBS_MLF_2021/edit/main/Project/docs/Research report from Huatai.pdf)): the first is `AlphaNet` using `raw price-volume data` as input, the other is using `price-volume data after feature extraction`, including: CNN, LogisticRegression and Random Forest.
+In order to integrate the factor generation and multi-factor synthesis steps in multi-factor stock selection, this project designs two types of network structure to `predict the rise or fall` of each stock over the next 10 days inspired by Huatai Research report (see [here](https://github.com/PanyuLi/PHBS_MLF_2021/edit/main/Project/docs/Research_report_from_Huatai.pdf)): the first is `AlphaNet` using `raw price-volume data` as input, the other is using `price-volume data after feature extraction`, including: CNN, LogisticRegression and Random Forest.
 
 ## Data Analysis
 
@@ -54,10 +54,10 @@ In order to effectively extract features from the original stock volume and pric
 * `Fully connected layer`: weighted synthesis of extracted features and uses `sigmoid` activation function to make classification
 
 **Network structure**
-<div align='center'><img width='700'src='attachment:image-3.png'/></div>
+<div align='center'><img width='700'src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/alphanet_model.png'/></div>
 
 **Example show the process of feature extraction**  
-<div align='center'><img width='600'src='attachment:image.png'/></div>
+<div align='center'><img width='600'src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/feature_extract.png'/></div>
 
 **Network structure details**  
 
