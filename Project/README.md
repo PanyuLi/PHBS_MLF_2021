@@ -20,11 +20,12 @@ In order to integrate the factor generation and multi-factor synthesis steps in 
 * Data: volume and price data of individual stocks without feature engineering, transfer the volume and price data into 9*30 `data pictures `, and 30 is the number of historical days
 * Labels: rise or fall of each stock over the next 10 days
 
-**Data sample**  
+**Raw data sample**  
 <div align='center'>
     <img src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/datasample1.png' width='600'/>
 </div>  
 
+**Data sample after feature extraction**   
 <div align='center'>
     <img src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/datasample2.png' width='700'/>
     </div>
@@ -33,12 +34,22 @@ In order to integrate the factor generation and multi-factor synthesis steps in 
 
 * Deal with missing data: open, high, low, close fill with the previous data; volume, pct_chg, vwap, turn, free_turn_n use 0 to fill NAN. After processing, the data has no NAN values. 
 * One-hot encoding: One-hot encoder is used to convert categorical data into integer data.
-* Feature Standardization：to avoid unit effect, we normalized the data along the feature direction
+* Feature Standardization：to avoid unit effect, we normalized the data along the feature direction  
 
+**Raw data after dropna**   
+<div align='center'>
+    <img src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/dropna.png' width='500'/>
+</div> 
+
+### 3. Feature Correlation and Distributions
+
+To get a better understanding of the properties of different features, we plot the features `correlations heatmap` and the `distributions` of the features. Through the corrletion graph, we can see that features from the same type has high correlation. Through the distributions graph, we can see that most of the features do not have a normal distribution.
+
+**Feature correlation**   
 <div align='center'>
     <img src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/heatmap.png' width='500'/>
 </div>  
-
+**Feature distribution**   
 <div align='center'>
     <img src='https://github.com/PanyuLi/PHBS_MLF_2021/blob/main/Project/image/distribution.png' width='500'/>
     </div>
