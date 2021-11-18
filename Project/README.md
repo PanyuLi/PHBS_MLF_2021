@@ -1,4 +1,4 @@
-# **Factor mining based on machine learning**
+# **Signal mining based on machine learning**
 
 ## Team Member
 
